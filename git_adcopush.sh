@@ -1,10 +1,21 @@
 #!/bin/bash
 
-if [ "$1" = "" ]; then
-	echo "Please specify the message!"
-fi
+echo "Welcome to Grading Script"
 
-git add .
-git commit -m "$1"
-git push orgin master
-echo "Successfully push to Git repo!"
+quit = $true
+while [ quit = $true ]
+do
+	read -p ">>>" action
+	case "$action" in
+		"list") echo "list everything"
+	esac
+
+
+# if [ "$1" = "" ]; then
+# 	echo "Please specify the message!"
+# fi
+
+# git add .
+# git commit -m "$1"
+# git push orgin master
+# echo "Successfully push to Git repo!"
